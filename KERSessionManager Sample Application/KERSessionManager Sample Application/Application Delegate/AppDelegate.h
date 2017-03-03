@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  KERSessionManager Sample Application
 //
-//  Created by Lindsey Rafferty on 3/3/17.
+//  Created by Kevin E. Rafferty on 3/3/17.
 //  Copyright © 2017 Quiver Coding. All rights reserved.
 //
 
@@ -12,6 +12,4 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-

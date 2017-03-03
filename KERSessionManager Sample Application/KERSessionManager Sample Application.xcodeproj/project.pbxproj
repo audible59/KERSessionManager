@@ -14,6 +14,8 @@
 		38888BA41E6A040000BBE851 /* KERSessionManager_Sample_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38888BA31E6A040000BBE851 /* KERSessionManager_Sample_ApplicationTests.m */; };
 		38888BB41E6A04B100BBE851 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38888BB31E6A04B100BBE851 /* AppDelegate.m */; };
 		38888BB71E6A04C000BBE851 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38888BB61E6A04C000BBE851 /* ViewController.m */; };
+		38888BE51E6A064300BBE851 /* KERSessionManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38888BE21E6A061700BBE851 /* KERSessionManager.framework */; };
+		38888BE61E6A064300BBE851 /* KERSessionManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38888BE21E6A061700BBE851 /* KERSessionManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +26,42 @@
 			remoteGlobalIDString = 38888B851E6A03FF00BBE851;
 			remoteInfo = "KERSessionManager Sample Application";
 		};
+		38888BE11E6A061700BBE851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38888BDC1E6A061700BBE851 /* KERSessionManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38888BC21E6A060000BBE851;
+			remoteInfo = KERSessionManager;
+		};
+		38888BE31E6A061700BBE851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38888BDC1E6A061700BBE851 /* KERSessionManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38888BCB1E6A060000BBE851;
+			remoteInfo = KERSessionManagerTests;
+		};
+		38888BE71E6A064300BBE851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38888BDC1E6A061700BBE851 /* KERSessionManager.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 38888BC11E6A060000BBE851;
+			remoteInfo = KERSessionManager;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38888BE91E6A064300BBE851 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				38888BE61E6A064300BBE851 /* KERSessionManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		38888B861E6A040000BBE851 /* KERSessionManager Sample Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KERSessionManager Sample Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +77,7 @@
 		38888BB31E6A04B100BBE851 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Application Delegate/AppDelegate.m"; sourceTree = "<group>"; };
 		38888BB51E6A04C000BBE851 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "View Controllers/ViewController.h"; sourceTree = "<group>"; };
 		38888BB61E6A04C000BBE851 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "View Controllers/ViewController.m"; sourceTree = "<group>"; };
+		38888BDC1E6A061700BBE851 /* KERSessionManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KERSessionManager.xcodeproj; path = ../KERSessionManager/KERSessionManager.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38888BE51E6A064300BBE851 /* KERSessionManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 		38888B7D1E6A03FF00BBE851 = {
 			isa = PBXGroup;
 			children = (
+				38888BDC1E6A061700BBE851 /* KERSessionManager.xcodeproj */,
 				38888B881E6A040000BBE851 /* KERSessionManager Sample Application */,
 				38888BA21E6A040000BBE851 /* KERSessionManager Sample ApplicationTests */,
 				38888B871E6A040000BBE851 /* Products */,
@@ -143,6 +183,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		38888BDD1E6A061700BBE851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38888BE21E6A061700BBE851 /* KERSessionManager.framework */,
+				38888BE41E6A061700BBE851 /* KERSessionManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,10 +202,12 @@
 				38888B821E6A03FF00BBE851 /* Sources */,
 				38888B831E6A03FF00BBE851 /* Frameworks */,
 				38888B841E6A03FF00BBE851 /* Resources */,
+				38888BE91E6A064300BBE851 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				38888BE81E6A064300BBE851 /* PBXTargetDependency */,
 			);
 			name = "KERSessionManager Sample Application";
 			productName = "KERSessionManager Sample Application";
@@ -214,6 +265,12 @@
 			mainGroup = 38888B7D1E6A03FF00BBE851;
 			productRefGroup = 38888B871E6A040000BBE851 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 38888BDD1E6A061700BBE851 /* Products */;
+					ProjectRef = 38888BDC1E6A061700BBE851 /* KERSessionManager.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				38888B851E6A03FF00BBE851 /* KERSessionManager Sample Application */,
@@ -221,6 +278,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		38888BE21E6A061700BBE851 /* KERSessionManager.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KERSessionManager.framework;
+			remoteRef = 38888BE11E6A061700BBE851 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38888BE41E6A061700BBE851 /* KERSessionManagerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KERSessionManagerTests.xctest;
+			remoteRef = 38888BE31E6A061700BBE851 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		38888B841E6A03FF00BBE851 /* Resources */ = {
@@ -268,6 +342,11 @@
 			isa = PBXTargetDependency;
 			target = 38888B851E6A03FF00BBE851 /* KERSessionManager Sample Application */;
 			targetProxy = 38888BA01E6A040000BBE851 /* PBXContainerItemProxy */;
+		};
+		38888BE81E6A064300BBE851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KERSessionManager;
+			targetProxy = 38888BE71E6A064300BBE851 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
