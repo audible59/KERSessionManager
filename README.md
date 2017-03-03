@@ -1,0 +1,2 @@
+# KERSessionManager
+Simple NSURLSession Manager
