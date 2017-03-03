@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38888B8B1E6A040000BBE851 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38888B8A1E6A040000BBE851 /* main.m */; };
+		38888B941E6A040000BBE851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38888B921E6A040000BBE851 /* Main.storyboard */; };
+		38888B961E6A040000BBE851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38888B951E6A040000BBE851 /* Assets.xcassets */; };
+		38888B991E6A040000BBE851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38888B971E6A040000BBE851 /* LaunchScreen.storyboard */; };
+		38888BA41E6A040000BBE851 /* KERSessionManager_Sample_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38888BA31E6A040000BBE851 /* KERSessionManager_Sample_ApplicationTests.m */; };
+		38888BB41E6A04B100BBE851 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38888BB31E6A04B100BBE851 /* AppDelegate.m */; };
+		38888BB71E6A04C000BBE851 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38888BB61E6A04C000BBE851 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38888BA01E6A040000BBE851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38888B7E1E6A03FF00BBE851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38888B851E6A03FF00BBE851;
+			remoteInfo = "KERSessionManager Sample Application";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38888B861E6A040000BBE851 /* KERSessionManager Sample Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KERSessionManager Sample Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38888B8A1E6A040000BBE851 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38888B931E6A040000BBE851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38888B951E6A040000BBE851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		38888B981E6A040000BBE851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		38888B9A1E6A040000BBE851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38888B9F1E6A040000BBE851 /* KERSessionManager Sample ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KERSessionManager Sample ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38888BA31E6A040000BBE851 /* KERSessionManager_Sample_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KERSessionManager_Sample_ApplicationTests.m; sourceTree = "<group>"; };
+		38888BA51E6A040000BBE851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38888BB21E6A04B100BBE851 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Application Delegate/AppDelegate.h"; sourceTree = "<group>"; };
+		38888BB31E6A04B100BBE851 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Application Delegate/AppDelegate.m"; sourceTree = "<group>"; };
+		38888BB51E6A04C000BBE851 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "View Controllers/ViewController.h"; sourceTree = "<group>"; };
+		38888BB61E6A04C000BBE851 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "View Controllers/ViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38888B831E6A03FF00BBE851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38888B9C1E6A040000BBE851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38888B7D1E6A03FF00BBE851 = {
+			isa = PBXGroup;
+			children = (
+				38888B881E6A040000BBE851 /* KERSessionManager Sample Application */,
+				38888BA21E6A040000BBE851 /* KERSessionManager Sample ApplicationTests */,
+				38888B871E6A040000BBE851 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38888B871E6A040000BBE851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38888B861E6A040000BBE851 /* KERSessionManager Sample Application.app */,
+				38888B9F1E6A040000BBE851 /* KERSessionManager Sample ApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38888B881E6A040000BBE851 /* KERSessionManager Sample Application */ = {
+			isa = PBXGroup;
+			children = (
+				38888BAE1E6A043F00BBE851 /* Application Delegate */,
+				38888BAF1E6A044C00BBE851 /* View Controllers */,
+				38888BB01E6A046100BBE851 /* Storyboards */,
+				38888BB11E6A046F00BBE851 /* Resources */,
+				38888B891E6A040000BBE851 /* Supporting Files */,
+			);
+			path = "KERSessionManager Sample Application";
+			sourceTree = "<group>";
+		};
+		38888B891E6A040000BBE851 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38888B8A1E6A040000BBE851 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38888BA21E6A040000BBE851 /* KERSessionManager Sample ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				38888BA31E6A040000BBE851 /* KERSessionManager_Sample_ApplicationTests.m */,
+				38888BA51E6A040000BBE851 /* Info.plist */,
+			);
+			path = "KERSessionManager Sample ApplicationTests";
+			sourceTree = "<group>";
+		};
+		38888BAE1E6A043F00BBE851 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				38888BB21E6A04B100BBE851 /* AppDelegate.h */,
+				38888BB31E6A04B100BBE851 /* AppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		38888BAF1E6A044C00BBE851 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38888BB51E6A04C000BBE851 /* ViewController.h */,
+				38888BB61E6A04C000BBE851 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		38888BB01E6A046100BBE851 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				38888B921E6A040000BBE851 /* Main.storyboard */,
+				38888B971E6A040000BBE851 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		38888BB11E6A046F00BBE851 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38888B951E6A040000BBE851 /* Assets.xcassets */,
+				38888B9A1E6A040000BBE851 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38888B851E6A03FF00BBE851 /* KERSessionManager Sample Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38888BA81E6A040000BBE851 /* Build configuration list for PBXNativeTarget "KERSessionManager Sample Application" */;
+			buildPhases = (
+				38888B821E6A03FF00BBE851 /* Sources */,
+				38888B831E6A03FF00BBE851 /* Frameworks */,
+				38888B841E6A03FF00BBE851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KERSessionManager Sample Application";
+			productName = "KERSessionManager Sample Application";
+			productReference = 38888B861E6A040000BBE851 /* KERSessionManager Sample Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38888B9E1E6A040000BBE851 /* KERSessionManager Sample ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38888BAB1E6A040000BBE851 /* Build configuration list for PBXNativeTarget "KERSessionManager Sample ApplicationTests" */;
+			buildPhases = (
+				38888B9B1E6A040000BBE851 /* Sources */,
+				38888B9C1E6A040000BBE851 /* Frameworks */,
+				38888B9D1E6A040000BBE851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38888BA11E6A040000BBE851 /* PBXTargetDependency */,
+			);
+			name = "KERSessionManager Sample ApplicationTests";
+			productName = "KERSessionManager Sample ApplicationTests";
+			productReference = 38888B9F1E6A040000BBE851 /* KERSessionManager Sample ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38888B7E1E6A03FF00BBE851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Quiver Coding";
+				TargetAttributes = {
+					38888B851E6A03FF00BBE851 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8T7JS2NBEH;
+						ProvisioningStyle = Automatic;
+					};
+					38888B9E1E6A040000BBE851 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8T7JS2NBEH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 38888B851E6A03FF00BBE851;
+					};
+				};
+			};
+			buildConfigurationList = 38888B811E6A03FF00BBE851 /* Build configuration list for PBXProject "KERSessionManager Sample Application" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38888B7D1E6A03FF00BBE851;
+			productRefGroup = 38888B871E6A040000BBE851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38888B851E6A03FF00BBE851 /* KERSessionManager Sample Application */,
+				38888B9E1E6A040000BBE851 /* KERSessionManager Sample ApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38888B841E6A03FF00BBE851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38888B991E6A040000BBE851 /* LaunchScreen.storyboard in Resources */,
+				38888B961E6A040000BBE851 /* Assets.xcassets in Resources */,
+				38888B941E6A040000BBE851 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38888B9D1E6A040000BBE851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38888B821E6A03FF00BBE851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38888BB71E6A04C000BBE851 /* ViewController.m in Sources */,
+				38888BB41E6A04B100BBE851 /* AppDelegate.m in Sources */,
+				38888B8B1E6A040000BBE851 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38888B9B1E6A040000BBE851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38888BA41E6A040000BBE851 /* KERSessionManager_Sample_ApplicationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38888BA11E6A040000BBE851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38888B851E6A03FF00BBE851 /* KERSessionManager Sample Application */;
+			targetProxy = 38888BA01E6A040000BBE851 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38888B921E6A040000BBE851 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38888B931E6A040000BBE851 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38888B971E6A040000BBE851 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38888B981E6A040000BBE851 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38888BA61E6A040000BBE851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38888BA71E6A040000BBE851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38888BA91E6A040000BBE851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8T7JS2NBEH;
+				INFOPLIST_FILE = "KERSessionManager Sample Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quivercoding.www.KERSessionManager-Sample-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38888BAA1E6A040000BBE851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8T7JS2NBEH;
+				INFOPLIST_FILE = "KERSessionManager Sample Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quivercoding.www.KERSessionManager-Sample-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38888BAC1E6A040000BBE851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8T7JS2NBEH;
+				INFOPLIST_FILE = "KERSessionManager Sample ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quivercoding.www.KERSessionManager-Sample-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KERSessionManager Sample Application.app/KERSessionManager Sample Application";
+			};
+			name = Debug;
+		};
+		38888BAD1E6A040000BBE851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8T7JS2NBEH;
+				INFOPLIST_FILE = "KERSessionManager Sample ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quivercoding.www.KERSessionManager-Sample-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KERSessionManager Sample Application.app/KERSessionManager Sample Application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38888B811E6A03FF00BBE851 /* Build configuration list for PBXProject "KERSessionManager Sample Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38888BA61E6A040000BBE851 /* Debug */,
+				38888BA71E6A040000BBE851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38888BA81E6A040000BBE851 /* Build configuration list for PBXNativeTarget "KERSessionManager Sample Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38888BA91E6A040000BBE851 /* Debug */,
+				38888BAA1E6A040000BBE851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38888BAB1E6A040000BBE851 /* Build configuration list for PBXNativeTarget "KERSessionManager Sample ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38888BAC1E6A040000BBE851 /* Debug */,
+				38888BAD1E6A040000BBE851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38888B7E1E6A03FF00BBE851 /* Project object */;
+}
