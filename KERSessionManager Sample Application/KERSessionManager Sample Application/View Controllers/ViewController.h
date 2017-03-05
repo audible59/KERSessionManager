@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <KERSessionManager/KERSessionManager.h>
+
 @interface ViewController : UIViewController
 
-
 @end
-

@@ -18,4 +18,15 @@ FOUNDATION_EXPORT const unsigned char KERSessionManagerVersionString[];
 
 @interface KERSessionManager : NSObject
 
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)sharedInstance;
+
+/**
+ This method with take a constructed URL and perform a GET request for data.
+
+ @param urlRequest An NSURL object containing the GET request URL
+ */
+- (void)GETRequestForURL:(NSURL *)urlRequest
+       completionHandler:(void (^)(NSDictionary *resultsDictionary))completionHandler;
+
 @end

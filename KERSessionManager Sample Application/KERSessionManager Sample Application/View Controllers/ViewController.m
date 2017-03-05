@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+static const NSString *weatherAPIURL = @"http://api.openweathermap.org/data/2.5/weather";
 static const NSString *weatherAPIKey = @"72c543337934d7aa4934b1bed8e5ca18";
 
 @interface ViewController ()
@@ -17,10 +18,6 @@ static const NSString *weatherAPIKey = @"72c543337934d7aa4934b1bed8e5ca18";
 @property (weak, nonatomic) IBOutlet UIButton *getWeatherButton;
 
 @property (weak, nonatomic) IBOutlet UITextField *zipCodeTextField;
-
-#pragma mark - Private Methods -
-
-- (void)GETRequestForURL:(NSURL *)urlRequest;
 
 @end
 
@@ -43,23 +40,14 @@ static const NSString *weatherAPIKey = @"72c543337934d7aa4934b1bed8e5ca18";
     
     if (zipCode &&
         zipCode.length > 0) {
-        NSURL *urlRequest = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.openweathermap.org/data/2.5/weather?zip=%@,us&APPID=%@", zipCode, weatherAPIKey]];
+        NSURL *urlRequest = [NSURL URLWithString:[NSString stringWithFormat:@"%@?zip=%@,us&units=imperial&APPID=%@", weatherAPIURL, zipCode, weatherAPIKey]];
         
-        [self GETRequestForURL:urlRequest];
+        [[KERSessionManager sharedInstance] GETRequestForURL:urlRequest
+                                           completionHandler:^(NSDictionary *resultsDictionary) {
+                                               NSLog(@"We have returned to the Sample Application");
+                                               NSLog(@"Weather Dictionary - %@", resultsDictionary);
+                                           }];
     }
-}
-
-- (void)GETRequestForURL:(NSURL *)urlRequest {
-    NSURLSessionDataTask *dataTask = [[NSURLSession sharedSession] dataTaskWithURL:urlRequest
-                                                                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                                                                     if (error == nil) {
-                                                                         
-                                                                     } else {
-                                                                         NSLog(@"There was an error reaching the Open Weather Map API - %@", error.localizedDescription);
-                                                                     }
-                                                                 }];
-    
-    [dataTask resume];
 }
 
 @end
