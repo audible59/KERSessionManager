@@ -30,9 +30,19 @@
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGh-EW-dbp">
                                 <rect key="frame" x="96" y="89" width="182" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Get Weather"/>
+                                <state key="normal" title="GET Weather"/>
                                 <connections>
                                     <action selector="onGetWeatherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3IB-v0-ySQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH3-83-nCe">
+                                <rect key="frame" x="96" y="185" width="182" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="POST Weather"/>
+                                <connections>
+                                    <action selector="onGetWeatherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dD5-fH-KJn"/>
+                                    <action selector="onPOSTWeatherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7q-uh-HRc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="getWeatherButton" destination="BGh-EW-dbp" id="VVr-ZR-VGt"/>
+                        <outlet property="postWeatherButton" destination="FH3-83-nCe" id="jFq-lR-i0H"/>
                         <outlet property="zipCodeTextField" destination="Ld1-Hr-fNk" id="DMH-6e-FEW"/>
                     </connections>
                 </viewController>

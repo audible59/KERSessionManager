@@ -27,6 +27,15 @@ FOUNDATION_EXPORT const unsigned char KERSessionManagerVersionString[];
  @param urlRequest An NSURL object containing the GET request URL
  */
 - (void)GETRequestForURL:(NSURL *)urlRequest
-       completionHandler:(void (^)(NSDictionary *resultsDictionary))completionHandler;
+       completionHandler:(void (^)(NSError *error, NSDictionary *resultsDictionary))completionHandler;
+
+/**
+ This method with take a constructed URL and perform a POST request for data.
+ 
+ @param urlRequest An NSURL object containing the POST request URL
+ */
+- (void)POSTRequestForURL:(NSURL *)urlRequest
+           withDictionary:(NSDictionary *)dictionary
+        completionHandler:(void (^)(NSError *error, NSDictionary *resultsDictionary))completionHandler;
 
 @end

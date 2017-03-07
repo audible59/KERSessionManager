@@ -8,14 +8,17 @@
 
 #import "ViewController.h"
 
-static const NSString *weatherAPIURL = @"http://api.openweathermap.org/data/2.5/weather";
-static const NSString *weatherAPIKey = @"72c543337934d7aa4934b1bed8e5ca18";
+static const NSString *openWeatherAPIURL = @"http://api.openweathermap.org/data/2.5/weather";
+static const NSString *openWeatherAPIKey = @"72c543337934d7aa4934b1bed8e5ca18";
+
+static const NSString *globalWeatherAPIURL = @"http://www.webservicex.com/globalweather.asmx/GetWeather";
 
 @interface ViewController ()
 
 #pragma mark - Private Properties -
 
 @property (weak, nonatomic) IBOutlet UIButton *getWeatherButton;
+@property (weak, nonatomic) IBOutlet UIButton *postWeatherButton;
 
 @property (weak, nonatomic) IBOutlet UITextField *zipCodeTextField;
 
@@ -40,14 +43,42 @@ static const NSString *weatherAPIKey = @"72c543337934d7aa4934b1bed8e5ca18";
     
     if (zipCode &&
         zipCode.length > 0) {
-        NSURL *urlRequest = [NSURL URLWithString:[NSString stringWithFormat:@"%@?zip=%@,us&units=imperial&APPID=%@", weatherAPIURL, zipCode, weatherAPIKey]];
+        NSURL *urlRequest = [NSURL URLWithString:[NSString stringWithFormat:@"%@?zip=%@,us&units=imperial&APPID=%@", openWeatherAPIURL, zipCode, openWeatherAPIKey]];
         
         [[KERSessionManager sharedInstance] GETRequestForURL:urlRequest
-                                           completionHandler:^(NSDictionary *resultsDictionary) {
+                                           completionHandler:^(NSError *error, NSDictionary *resultsDictionary) {
                                                NSLog(@"We have returned to the Sample Application");
-                                               NSLog(@"Weather Dictionary - %@", resultsDictionary);
+                                               
+                                               if (error) {
+                                                   NSLog(@"There was an error with the GET Request - %@", error.localizedDescription);
+                                               }
+                                               
+                                               if (resultsDictionary) {
+                                                   NSLog(@"Weather Dictionary - %@", resultsDictionary);
+                                               }
                                            }];
     }
+}
+
+- (IBAction)onPOSTWeatherButtonPressed:(id)sender {
+    NSURL *urlRequest = [NSURL URLWithString:[NSString stringWithFormat:@"%@", globalWeatherAPIURL]];
+    
+    NSDictionary *postDictionary = @{@"CityName": @"tustin",
+                                     @"CountryName": @"us"};
+    
+    [[KERSessionManager sharedInstance] POSTRequestForURL:urlRequest
+                                           withDictionary:postDictionary
+                                        completionHandler:^(NSError *error, NSDictionary *resultsDictionary) {
+                                            NSLog(@"We have returned to the Sample Application");
+                                            
+                                            if (error) {
+                                                NSLog(@"There was an error with the POST Request - %@", error.localizedDescription);
+                                            }
+                                            
+                                            if (resultsDictionary) {
+                                                NSLog(@"Weather Dictionary - %@", resultsDictionary);
+                                            }
+                                        }];
 }
 
 @end
