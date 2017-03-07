@@ -63,7 +63,7 @@ static const NSString *globalWeatherAPIURL = @"http://www.webservicex.com/global
 - (IBAction)onPOSTWeatherButtonPressed:(id)sender {
     NSURL *urlRequest = [NSURL URLWithString:[NSString stringWithFormat:@"%@", globalWeatherAPIURL]];
     
-    NSDictionary *postDictionary = @{@"CityName": @"tustin",
+    NSDictionary *postDictionary = @{@"CityName"   : @"tustin",
                                      @"CountryName": @"us"};
     
     [[KERSessionManager sharedInstance] POSTRequestForURL:urlRequest

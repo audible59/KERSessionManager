@@ -65,14 +65,18 @@
                                                                              } else {
                                                                                  NSLog(@"There was an error parsing the JSON data object - %@", jsonError.localizedDescription);
                                                                                  
-                                                                                 completionHandler(jsonError, nil);
+                                                                                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                                                                     completionHandler(jsonError, nil);
+                                                                                 }];
                                                                              }
                                                                              
                                                                              
                                                                          } else {
                                                                              NSLog(@"There was an error reaching the Open Weather Map API - %@", error.localizedDescription);
                                                                              
-                                                                             completionHandler(error, nil);
+                                                                             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                                                                 completionHandler(error, nil);
+                                                                             }];
                                                                          }
                                                                      }];
         
@@ -122,14 +126,18 @@
                                                                       } else {
                                                                           NSLog(@"There was an error parsing the JSON data object - %@", jsonError.localizedDescription);
                                                                           
-                                                                          completionHandler(jsonError, nil);
+                                                                          [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                                                              completionHandler(jsonError, nil);
+                                                                          }];
                                                                       }
                                                                       
                                                                       
                                                                   } else {
                                                                       NSLog(@"There was an error reaching the Global Weather API - %@", error.localizedDescription);
                                                                       
-                                                                      completionHandler(error, nil);
+                                                                      [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                                                                          completionHandler(error, nil);
+                                                                      }];
                                                                   }
                                                               }];
             
